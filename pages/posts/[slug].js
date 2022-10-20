@@ -50,7 +50,7 @@ const Post = ({ frontMatter, content, slug }) => {
             ],
           }}
         />
-        <div className="mx-36">
+        <div className="sm:mx-36">
           <div className="pt-36 prose max-w-none">
             <div className="text-center">
               <Image
@@ -60,7 +60,7 @@ const Post = ({ frontMatter, content, slug }) => {
                 alt={frontMatter.title}
               />
             </div>
-            <div className="relative flex mt-12">
+            <div className="relative lg:flex mt-12">
               <div className="space-x-2">
                 <h1 className="font-bold text-3xl">{frontMatter.title}</h1>
                 <span>{frontMatter.date}</span>

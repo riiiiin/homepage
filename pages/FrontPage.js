@@ -41,7 +41,7 @@ function FrontPage({ posts }) {
         <div className="text-center">
           <div className="text-xl font-bold">製品紹介</div>
           <p className="">Availaでは、学生の私たちだからこそ感じる教育の課題を<br></br>学生目線で解決する様々なサービスを提供しています。</p>
-          <div className="flex items-center justify-center mt-7">
+          <div className="sm:flex items-center justify-center mt-7">
             <div className="text-center m-7" >
                 <Image
                     src={circle}
@@ -72,8 +72,8 @@ function FrontPage({ posts }) {
           </div>
         </div>
         <div className="mt-36 max-w-4xl mx-auto">
-          <div style={{borderBottom: "2px solid #0088D3",  display: "flex", alignItems: "center", justifyContent: "space-between"}}>
-            <div style={{fontWeight: "bold", fontSize: "25px",}}>コラム</div>
+          <div className="sm:flex" style={{borderBottom: "2px solid #0088D3", alignItems: "center", justifyContent: "space-between"}}>
+            <div style={{fontWeight: "bold", fontSize: "25px",} }>コラム</div>
             <p style={{}}>ソフトウェア開発のための基礎知識や実践的なノウハウを解説しています。</p>
           </div>
         </div>

@@ -28,7 +28,7 @@ export default function Home({ posts }) {
   return (
     <div className="my-8 mx-auto">
       <FrontPage />
-      <div className="max-w-4xl mx-auto grid grid-cols-3 gap-4 mt-5">
+      <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-4 m-5">
         {posts.map((post) => (
           <PostCard key={post.slug} post={post} />
         ))}

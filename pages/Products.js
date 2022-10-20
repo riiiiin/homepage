@@ -12,7 +12,7 @@ function Products() {
         <div className="">
             <div style={{paddingTop: "50px", display: "flex"}}>
                 <div className="">
-                    <Tabs>
+                    {/* <Tabs>
                         <div style={{display: "flex"}}>
                             <div style={{position: "fixed",height: "100vh",width: "200px", borderRight: "1px solid gray"}}>
                                 <TabList style={{listStyle: "none", paddingLeft:"50px"}}>
@@ -28,7 +28,7 @@ function Products() {
                                        <div style={{borderBottom: "2px solid #0088D3", textAlign:"left", marginTop: "0px"}}>
                                             <div style={{fontSize: "23px", padding: "20px 0"}}>saporiとは</div>
                                         </div>
-                                        <p style={{textAlign:"left"}}>　これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。</p>
+                                        <p style={{textAlign:"left", marginTop:"20px"}}>キャリアパスポートアプリでは、ユーザー登録をするだけで、既存のキャリアパスポートに記入しなければならない項目をすべてクラウド上で管理できます。</p>
                                         <div style={{display: "flex", alignItems:"center", justifyContent:"center", margin: "100px 50px"}}>
                                             <div style={{textAlign:"center", margin: "20px"}}>
                                                 <Image src={cycle} width={70} objectFit="contain" alt="cycle" />
@@ -64,7 +64,37 @@ function Products() {
                             </div>
 
                         </div>
-                    </Tabs>
+                    </Tabs> */}
+                    <div>
+                        <div className="sm:mx-12 mx-3" style={{textAlign:"center"}}>
+                            <Image src={sapori} width={1000} objectFit="contain" alt="sapori" />
+                            <div style={{borderBottom: "2px solid #0088D3", textAlign:"left", marginTop: "0px"}}>
+                                <div style={{fontSize: "23px", padding: "20px 0"}}>saporiとは</div>
+                            </div>
+                            <p style={{textAlign:"left", marginTop:"20px"}}>キャリアパスポートアプリでは、ユーザー登録をするだけで、既存のキャリアパスポートに記入しなければならない項目をすべてクラウド上で管理できます。</p>
+                            <div className="sm:flex sm:mx-24 sm:my-12" style={{ alignItems:"center", justifyContent:"center"}}>
+                                <div className="sm:m-5 m-2" style={{textAlign:"center", margin: "20px"}}>
+                                    <Image src={cycle} width={70} objectFit="contain" alt="cycle" />
+                                    <div style={{fontWeight: "bold", color: "#1A4F83"}}>目標と振り返りを促す</div>
+                                    <p>PDCAサイクルを習慣化することによって、学生のキャリア教育をサポートします。</p>
+                                </div>
+                                <div className="sm:m-5 m-2" style={{textAlign:"center", margin: "20px"}}>
+                                <Image src={handshake} width={70} objectFit="contain" alt="cycle" />
+                                    <div style={{fontWeight: "bold", color: "#1A4F83"}}>先生と生徒をつなげる</div>
+                                    <p>先生と生徒のコミュニケーションを円滑にすることで、より良い学習環境の形成を目指します。</p>
+                                </div>
+                                <div className="sm:m-5 m-2" style={{textAlign:"center", margin: "20px"}}>
+                                <Image src={cloud_done} width={70} objectFit="contain" alt="cycle" />
+                                    <div style={{fontWeight: "bold", color: "#1A4F83"}}>３年間のデータを保証</div>
+                                    <p>データベースへ最大3年間のデータを記録しており、常にデータが復元可能です。</p>
+                                </div>
+                            </div>
+                            {/* <div style={{borderBottom: "2px solid #0088D3", textAlign:"left", marginTop: "50px"}}>
+                                <div style={{fontSize: "23px", padding: "20px 0"}}>導入方法</div>
+                            </div>
+                            <p style={{textAlign:"left"}}>　これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。<br></br>これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。これは例文です。</p> */}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
