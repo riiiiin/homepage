@@ -4,10 +4,11 @@ import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import Tag from '../../components/Tag';
-import remarkToc from 'remark-toc';
+import { marked } from 'marked';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
+import remarkToc from 'remark-toc';
 
 
 export async function getStaticProps({ params }) {
@@ -49,32 +50,34 @@ const Post = ({ frontMatter, content, slug }) => {
             ],
           }}
         />
-      <div className="pt-36">
-        <div className="text-center">
-          <Image
-            src={`/${frontMatter.image}`}
-            width={800}
-            height={300}
-            alt={frontMatter.title}
-          />
-        </div>
-        <div className="relative flex mt-12 mx-36">
-          <div className="space-x-2">
-            <h1 className="font-bold text-3xl">{frontMatter.title}</h1>
-            <span>{frontMatter.date}</span>
+        <div className="mx-36">
+          <div className="pt-36 prose max-w-none">
+            <div className="text-center">
+              <Image
+                src={`/${frontMatter.image}`}
+                width={800}
+                height={300}
+                alt={frontMatter.title}
+              />
+            </div>
+            <div className="relative flex mt-12">
+              <div className="space-x-2">
+                <h1 className="font-bold text-3xl">{frontMatter.title}</h1>
+                <span>{frontMatter.date}</span>
+              </div>
+              <div className="absolute right-0">
+                {frontMatter.categories.map((category) => (
+                  <span key={category}>
+                    <Link href={`/categories/${category}`}>
+                      <Tag text={category} />
+                    </Link>
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="leading-9 text-lg" dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
           </div>
-          <div className="absolute right-0">
-            {frontMatter.categories.map((category) => (
-              <span key={category}>
-                <Link href={`/categories/${category}`}>
-                  <Tag text={category} />
-                </Link>
-              </span>
-            ))}
-          </div>
         </div>
-        <div className="mx-36 leading-9 text-lg" dangerouslySetInnerHTML={{ __html: content }}></div>
-      </div>
     </>
   );
 };

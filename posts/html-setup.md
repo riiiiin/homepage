@@ -6,51 +6,48 @@ image: column2.png
 categories: ['html','css']
 ---
 
-## Table of Contents
 
-
-<div style="border-bottom: 1px solid #3191EA; margin-top: 80px;margin-bottom: 20px; font-size: 25px; padding-bottom: 10px;">はじめに</div>
+## はじめに
+*    *    *
 　「htmlやcssでどこで使うの？」<br>　「いったい何から始めたらいいのかわからない、、」<br>
 そんなお悩みをお持ちではありませんか？
 この記事では、実際にホームページをコーディングする環境をpc上で整える状態までをご説明します！！
-　
 
-<!-- ## Next.js の準備
-
-### プロジェクトの作成 -->
-<div style="border-bottom: 1px solid #3191EA; margin-top: 80px;margin-bottom: 20px; font-size: 25px; padding-bottom: 10px;">テキストエディタをインストールしよう</div>
-
+### テキストエディタをインストールしよう
+*    *    *
 　まず、コーディングをするためにはテキストエディタをインストールする必要があります。
-<br><br>
 
-【ポイント】テキストエディタとはテキストファイルを編集するときに使うソフトのこと
-<br><br>
+___【ポイント】テキストエディタとはテキストファイルを編集するときに使うソフトのこと__
+
 　簡単に言えば、コーディングを行うための便利ツールと考えていれば今は大丈夫です。
-<br>
+
 　テキストエディタには様々なソフトがありますが、まだ使ったことがないということであれば「Visual Studio Code(VSCode)」をお勧めします。
 
-<div style="border-bottom: 1px solid #3191EA; margin-top: 80px;margin-bottom: 20px; font-size: 22px; padding-bottom: 10px;">VSCodeのインストール</div>
-
+### VSCodeのインストール
+*    *    *
 　では、早速VSCodeをインストールしてみましょう。
 
-<a style="color:blue; border-bottom:1px solid blue;" href="https://azure.microsoft.com/ja-jp/products/visual-studio-code/">こちら</a>からVSCodeの公式ホームページへ飛びます。
+[こちら](https://www.google.co.jp/)からVSCodeの公式ホームページへ飛びます。
 <img style="margin:40px; width: 500px;" src="/html-setup/photo1.jpg">
 上記の画像が出てきたら、左側の今すぐインストールをクリックします。
 <img style="margin:40px; width: 500px;" src="/html-setup/photo2.jpg">
 上記の画面に飛べば、windowsの方は左のアイコンをクリックし、インストールを始めます。
-<br><br>
+
 　exeファイルのダウンロードが完了すれば、あとは表示される手順に沿ってインストールを完了させましょう。
 
-<div style="border-bottom: 1px solid #3191EA; margin-top: 80px;margin-bottom: 20px; font-size: 22px; padding-bottom: 10px;">VSCodeの拡張機能</div>
-
+### VSCodeの拡張機能
+*    *    *
 　続いては、VSCodeの拡張機能について解説します。
-<br><br>
-【ポイント】拡張機能とはVSCode自体がサポートしていない昨日を後付けで拡張するためのものであり、自分で自由にカスタマイズすることができます。例えば、ミスに気づきやすくするものや、人間側の操作をコンピュータに任せることができるようになります。
 
-<div style="border-bottom: 1px solid #3191EA; margin-top: 80px;margin-bottom: 20px; font-size: 22px; padding-bottom: 10px;">おすすめの拡張機能</div>
+___【ポイント】拡張機能とはVSCode自体がサポートしていない昨日を後付けで拡張するためのものであり、自分で自由にカスタマイズすることができます。__
+例えば、ミスに気づきやすくするものや、人間側の操作をコンピュータに任せることができるようになります。
 
-<span style="font-weight:bold;">Live Server</span>
+### おすすめの拡張機能
+*    *    *
+__Live Server__
 <br>
 　この拡張機能では、html/cssのファイル変更をリアルタイムでWEBページに反映することができます。<br>
 　もし、この機能がなければいちいちリロードする必要があるので、時短になり、とても便利な機能です。<br>
 　ぜひ導入しましょう。
+
+### 拡張機能の導入方法
